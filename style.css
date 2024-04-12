@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+main {
+    display: grid;
+    background-color: #333;
+    padding: 2% 4%;
+    border-radius: 10px;
+    color: #fff;
+    margin: auto;
+    width: 50%;
+    margin-top: 50px;
+    min-width: 100px;
+    overflow-x: hidden;
+}
+
+.button_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+}
+
+button {
+    padding: 12px 14px;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#btn_navigate {
+    margin: 10px auto;
+    margin-top: 30px;
+    background-color: green;
+}
+
+#btn_search {
+    background-color: cadetblue;
+}
+
+.content {
+    display: grid;
+    background-color: #333;
+    padding: 2% 4%;
+    border-radius: 10px;
+    color: #fff;
+    margin: auto;
+    width: 50%;
+    margin-top: 50px;
+}
+
+img {
+    margin: auto;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 2px 3px 10px 1px #c2d9e9;
+}
+
+input[type="search"] {
+    margin: 10px;
+    padding: 12px 14px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 1158px) {
+    main {
+        width: 60%;
+    }
+
+    .content {
+        width: 60%;
+    }
+}
+
+@media (max-width: 935px) {
+    .button_container {
+        display: grid;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    input[type=search] {
+        padding: 12px 16px;
+    }
+}
+
+@media (max-width: 558px) {
+    input[type=search] {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    #btn_search {
+        width: 100%;
+    }
+}
